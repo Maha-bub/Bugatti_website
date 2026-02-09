@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Hero Video</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +33,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="position-relative vh-100 overflow-hidden">
+    <div class="position-relative vh-100 overflow-hidden">
 
         <!-- Video -->
         <video autoplay muted loop playsinline
@@ -40,8 +41,8 @@
             <source src="content/Hero Videos/fkp-hommage-launchfilm-moodcut-driving-landscape.mp4" type="video/mp4">
         </video>
 
-        <!-- Dark Overlay -->
-        <div class="position-absolute top-0 start-0 w-100 h-100 bg-transparent bg-dark opacity-50%"></div>
+        <!-- section overlay -->
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.579);"></div>
 
         <!-- Content -->
         <div class="container position-relative z-2 h-100 d-flex flex-column 
@@ -57,7 +58,38 @@
 
         </div>
 
-    </section>
+    </div>
+
+    <!-- second hero section and discover luxury super cars section -->
+
+    <div class="position-relative vh-100 overflow-hidden">
+
+        <!-- Video -->
+        <video autoplay muted loop playsinline
+            class="position-absolute top-50 start-50 translate-middle min-vw-100 min-vh-100 object-fit-cover">
+            <source src="content/Hero Videos/secend-hero-video.mp4" type="video/mp4">
+        </video>
+
+
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.65);"></div>
+
+        <!-- Content -->
+        <div class="container position-relative z-2 h-100 d-flex flex-column 
+              justify-content-center align-items-center text-center text-white">
+
+            <h1 class="display-3 fw-semibold f-romnia20 discover-section">Solitaire</h1>
+            <p class="text-uppercase small mt-3">ROOTED IN TRADITION. BUILT TO LEAVE A LEGACY.</p>
+            <p></p>
+
+            <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2 mt-4">
+                DISCOVER THE PROGRAMME SOLITAIRE
+            </a>
+
+        </div>
+
+    </div>
+
+    
 
 
     <!-- Bootstrap JavaScript cdn -->
