@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hero Video</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-dark">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark align-items-center  bg-transparent position-absolute w-100 z-3 px-4 py-2">
+        <div class="container-fluid">
+            <div class="text-white fw-normal fs-4 col-4">
+                <i class="bi bi-list"></i>
+                MENU
+            </div>
+            <div class="col-4 align-items-center m-autoS">
+                <a class="navbar-brand text-white fw-bold fs-4" href="#">BUGATTI</a>
+            </div>
+            <div class=" text-white top-0 end-0 p-4 d-flex align-items-center gap-2 text-uppercase">
+                <i class="bi bi-bag"></i>
+                <a href="#" class="text-white text-decoration-none">Store</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="position-relative vh-100 overflow-hidden">
+
+        <!-- Video -->
+        <video autoplay muted loop playsinline
+            class="position-absolute top-50 start-50 translate-middle min-vw-100 min-vh-100 object-fit-cover">
+            <source src="content/Hero Videos/fkp-hommage-launchfilm-moodcut-driving-landscape.mp4" type="video/mp4">
+        </video>
+
+        <!-- Dark Overlay -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-transparent bg-dark opacity-50%"></div>
+
+        <!-- Content -->
+        <div class="container position-relative z-2 h-100 d-flex flex-column 
+              justify-content-center align-items-center text-center text-white">
+
+            <h1 class="display-3 fw-semibold">THE BUGATTI F.K.P. HOMMAGE</h1>
+            <p class="text-uppercase small mt-3">Honoring the VEYRON and its visionary Creator</p>
+            <p></p>
+
+            <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2 mt-4">
+                Witness The Legend
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Bootstrap JavaScript cdn -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
