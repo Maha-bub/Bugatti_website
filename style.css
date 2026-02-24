@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
 }
-.discover-section{
-    font-family:Montserrat;
+
+.discover-section {
+    font-family: Montserrat;
 }
 
 .video-card {
@@ -18,14 +19,106 @@
 .dark-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        to bottom,
-        rgba(34, 33, 33, 0.395),
-        rgba(216, 216, 216, 0)
-    );
+    background: linear-gradient(to bottom,
+            rgba(34, 33, 33, 0.395),
+            rgba(216, 216, 216, 0));
     z-index: 1;
 }
 
 .card-img-overlay {
     z-index: 2;
+}
+
+/* featured card section style */
+.video-card .bg-dark,
+.dark-overlay {
+    transition: opacity 0.3s ease;
+}
+
+.video-card:hover .bg-dark,
+.card:hover .dark-overlay {
+    opacity: 0.7;
+}
+
+.video-card video,
+.card img {
+    transition: transform 0.6s ease;
+}
+
+.video-card:hover video,
+.card:hover img {
+    transform: scale(1.1);
+}
+
+
+/* BUGATTI Sur Mesure Style */
+
+.sur-section{
+    padding: 80px 0;
+    background: #000000 !important;
+    color: #ffffff; /* Make all text white by default */
+}
+
+.card{
+      background: #000000;
+}
+.card-custom {
+  
+    border: none;
+    border-radius: 10px;
+}
+
+/* Image Wrap */
+.image-wrapper {
+    overflow: hidden;
+    height: 90%;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Image hover */
+.image-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+.content-area {
+    padding: 60px;
+}
+
+.content-area h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #ffffff; /* White heading */
+}
+
+.content-area p {
+    color: #ffffff; /* White paragraph */
+    margin-bottom: 40px;
+    max-width: 400px;
+}
+
+.custom-link {
+    color: #ffffff; /* White link */
+    text-decoration: none;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.custom-link:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .content-area {
+        padding: 40px;
+    }
 }
