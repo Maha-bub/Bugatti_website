@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FKP Hommage | Concept Tribute</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Tracking/Letter Spacing */
+.tracking-widest { letter-spacing: 0.3rem; }
+.ls-3 { letter-spacing: 3px; }
+
+/* Navbar Styling */
+.navbar {
+    padding: 1.5rem 0;
+    transition: background 0.3s ease;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, transparent 100%);
+}
+
+.nav-link {
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    /* Replace with actual image URL */
+    background: url('https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&q=80') center/cover no-repeat;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Darkens the image to make text readable */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    letter-spacing: -2px;
+}
+
+/* Section Transitions */
+.bg-black { background-color: #000 !important; }
+.bg-dark { background-color: #0a0a0a !important; }
+
+.btn-outline-light {
+    border-width: 1px;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    transition: 0.4s;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Image Placeholder Styling */
+.img-placeholder {
+    background: linear-gradient(45deg, #1a1a1a, #333);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+    </style>
+</head>
+<body>
+
+    
+
+    <section class="hero-section d-flex align-items-center justify-content-center text-center">
+        <div class="overlay"></div>
+        <div class="hero-content text-white" data-aos="fade-up">
+            <h6 class="text-uppercase ls-3 mb-3">Programme Solitaire</h6>
+            <h1 class="display-1 fw-bold mb-4">F.K.P. HOMMAGE</h1>
+            <p class="lead mb-5">A masterpiece honoring the revolutionary spirit of the Veyron.</p>
+            <a href="#discover" class="btn btn-outline-light px-5 py-2 rounded-0">DISCOVER</a>
+        </div>
+    </section>
+
+    <section id="discover" class="py-5 bg-dark text-white">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4">
+                    <h2 class="display-5 fw-bold mb-4">ENGINEERING <br> AMBITION</h2>
+                    <p class="text-secondary">The F.K.P. Hommage combines the timeless proportions of the original Veyron with two decades of engineering evolution. Every surface is refined to mimic athletic muscle.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="img-placeholder bg-secondary" style="height: 400px; border-radius: 4px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-black text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h3 class="fw-bold">1,600 PS</h3>
+                    <p class="text-uppercase text-secondary small">Power Output</p>
+                </div>
+                <div class="col-md-4 border-start border-secondary">
+                    <h3 class="fw-bold">W16</h3>
+                    <p class="text-uppercase text-secondary small">Engine Configuration</p>
+                </div>
+                <div class="col-md-4 border-start border-secondary">
+                    <h3 class="fw-bold">400+ KM/H</h3>
+                    <p class="text-uppercase text-secondary small">Top Speed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
