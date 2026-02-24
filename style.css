@@ -3,6 +3,23 @@
     padding: 0;
 }
 
+.btn-outline:hover {
+    background-color: #c0c0c09c !important; /* light gray */
+    /* color: #000 !important; black text */
+    font-size: small;
+    border: none !important; /* remove border */
+}
+
+.btn-outline a {
+    border: none !important;
+    font-size: small;
+}
+
+.btn-outline {
+    border: none !important;
+    transition: all 0.3s ease;
+}
+
 .discover-section {
     font-family: Montserrat;
 }
@@ -20,8 +37,8 @@
     position: absolute;
     inset: 0;
     background: linear-gradient(to bottom,
-            rgba(34, 33, 33, 0.395),
-            rgba(216, 216, 216, 0));
+            rgb(34, 33, 33),
+            rgb(0, 0, 0));
     z-index: 1;
 }
 
